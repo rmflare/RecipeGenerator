@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- app name -->
+    <string name="app_name">Recipe Generator</string>
+
+    <!-- generic app strings -->
+    <string name="all_find">Find</string>
+    <string name="all_clear">Clear</string>
+    <string name="all_back">Back</string>
+
+    <!-- activity_menu -->
+    <string name="menu_findRecipes">Find Recipes</string>
+    <string name="menu_savedRecipes">Saved Recipes</string>
+
+    <!-- activity_categories -->
+    <string name="categories_title">Select Categories</string>
+
+    <!-- activity_ingredients -->
+    <string name="ingredients_title">Select Ingredients</string>
+
+    <!-- activity_favorites -->
+    <string name="favorites_title">Favorite Recipes</string>
+    <string name="favorites_remove">Remove</string>
+
+    <!-- activity_output -->
+    <string name="output_title">Found Recipes</string>
+    <string name="output_save">Save</string>
+
+</resources>

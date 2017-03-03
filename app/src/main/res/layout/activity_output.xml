@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/activity_output"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_vertical_margin"
+    android:gravity="center">
+
+    <TextView
+        android:id="@id/tv_output_title"
+        android:text="@string/output_title"
+        style="@style/title_textview" />
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:columnCount="4"
+        android:rowCount="5">
+
+        <Button
+            android:id="@id/btn_output_rec1"
+            android:layout_column="1"
+            android:layout_row="1"
+            android:background="@color/pastelPurple"
+            style="@style/grid_button"/>
+
+        <Button
+            android:id="@id/btn_output_rec2"
+            android:layout_column="2"
+            android:layout_row="1"
+            android:background="@color/pastelPurple"
+            style="@style/grid_button"/>
+
+        <Button
+            android:id="@id/btn_output_rec3"
+            android:layout_column="3"
+            android:layout_row="1"
+            android:background="@color/pastelPurple"
+            style="@style/grid_button"/>
+
+        <Button
+            android:id="@id/btn_output_rec4"
+            android:layout_column="1"
+            android:layout_row="2"
+            android:background="@color/pastelPurple"
+            style="@style/grid_button"/>
+
+        <Button
+            android:id="@id/btn_output_rec5"
+            android:layout_column="2"
+            android:layout_row="2"
+            android:background="@color/pastelPurple"
+            style="@style/grid_button" />
+
+        <Button
+            android:id="@id/btn_output_rec6"
+            android:layout_column="3"
+            android:layout_row="2"
+            android:background="@color/pastelPurple"
+            style="@style/grid_button" />
+
+        <Button
+            android:id="@id/btn_output_rec7"
+            android:layout_column="1"
+            android:layout_row="3"
+            android:background="@color/pastelPurple"
+            style="@style/grid_button" />
+
+        <Button
+            android:id="@id/btn_output_rec8"
+            android:layout_column="2"
+            android:layout_row="3"
+            android:background="@color/pastelPurple"
+            style="@style/grid_button" />
+
+        <Button
+            android:id="@id/btn_output_rec9"
+            android:layout_column="3"
+            android:layout_row="3"
+            android:background="@color/pastelPurple"
+            style="@style/grid_button" />
+
+    </GridLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@id/btn_all_back"
+            android:text="@string/all_back"
+            android:layout_marginEnd="55dp"
+            style="@style/nav_button" />
+
+        <Button
+            android:id="@id/btn_output_save"
+            android:text="@string/output_save"
+            android:layout_marginStart="55dp"
+            style="@style/nav_button" />
+
+    </LinearLayout>
+
+</LinearLayout>

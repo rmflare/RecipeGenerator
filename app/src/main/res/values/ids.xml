@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- generic app ids -->
+    <item type="id" name="btn_all_back" />
+    <item type="id" name="btn_all_find" />
+    <item type="id" name="btn_all_clear" />
+
+    <!-- activity_menu -->
+    <item type="id" name="activity_menu" />
+    <item type="id" name="iv_menu_logo" />
+    <item type="id" name="btn_menu_findRecipes" />
+    <item type="id" name="btn_menu_savedRecipes" />
+
+    <!-- activity_categories -->
+    <item type="id" name="activity_categories" />
+    <item type="id" name="tv_categories_title" />
+    <item type="id" name="btn_categories_meat" />
+    <item type="id" name="btn_categories_veg" />
+    <item type="id" name="btn_categories_fruit" />
+    <item type="id" name="btn_categories_dairy" />
+    <item type="id" name="btn_categories_nut" />
+    <item type="id" name="btn_categories_grain" />
+    <item type="id" name="btn_categories_sea" />
+    <item type="id" name="btn_categories_spice" />
+    <item type="id" name="btn_categories_oil" />
+
+    <!-- activity_ingredients -->
+    <item type="id" name="activity_ingredients" />
+    <item type="id" name="tv_ingredients_title" />
+    <item type="id" name="btn_ingredients_ing1" />
+    <item type="id" name="btn_ingredients_ing2" />
+    <item type="id" name="btn_ingredients_ing3" />
+    <item type="id" name="btn_ingredients_ing4" />
+    <item type="id" name="btn_ingredients_ing5" />
+    <item type="id" name="btn_ingredients_ing6" />
+    <item type="id" name="btn_ingredients_ing7" />
+    <item type="id" name="btn_ingredients_ing8" />
+    <item type="id" name="btn_ingredients_ing9" />
+
+    <!-- activity_favorites -->
+    <item type="id" name="activity_favorites" />
+    <item type="id" name="tv_favorites_title" />
+    <item type="id" name="btn_favorites_remove" />
+    <item type="id" name="btn_favorites_fav1" />
+    <item type="id" name="btn_favorites_fav2" />
+    <item type="id" name="btn_favorites_fav3" />
+    <item type="id" name="btn_favorites_fav4" />
+    <item type="id" name="btn_favorites_fav5" />
+    <item type="id" name="btn_favorites_fav6" />
+    <item type="id" name="btn_favorites_fav7" />
+    <item type="id" name="btn_favorites_fav8" />
+    <item type="id" name="btn_favorites_fav9" />
+
+    <!-- activity_output -->
+    <item type="id" name="activity_output" />
+    <item type="id" name="tv_output_title" />
+    <item type="id" name="btn_output_save" />
+    <item type="id" name="btn_output_rec1" />
+    <item type="id" name="btn_output_rec2" />
+    <item type="id" name="btn_output_rec3" />
+    <item type="id" name="btn_output_rec4" />
+    <item type="id" name="btn_output_rec5" />
+    <item type="id" name="btn_output_rec6" />
+    <item type="id" name="btn_output_rec7" />
+    <item type="id" name="btn_output_rec8" />
+    <item type="id" name="btn_output_rec9" />
+
+</resources>
