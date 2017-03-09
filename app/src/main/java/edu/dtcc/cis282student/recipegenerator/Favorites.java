@@ -6,7 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.content.Intent;
 
-class Favorites extends AppCompatActivity implements View.OnClickListener {
+public class Favorites extends AppCompatActivity implements View.OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -71,6 +71,8 @@ class Favorites extends AppCompatActivity implements View.OnClickListener {
                 break;
 
             case R.id.btn_all_back:
+                Intent bIntent = new Intent(getApplicationContext(), Menu.class);
+                startActivity(bIntent);
                 break;
 
             case R.id.btn_favorites_remove:

@@ -15,6 +15,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Categories" />
+        <activity android:name=".Ingredients" />
+        <activity android:name=".Favorites" />
+        <activity android:name=".Output" />
     </application>
 
 </manifest>

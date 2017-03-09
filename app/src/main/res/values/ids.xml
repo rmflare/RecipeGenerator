@@ -66,4 +66,7 @@
     <item type="id" name="btn_output_rec8" />
     <item type="id" name="btn_output_rec9" />
 
+    <!-- fragment_scroll -->
+    <item type="id" name="fragment_scroll" />
+
 </resources>
