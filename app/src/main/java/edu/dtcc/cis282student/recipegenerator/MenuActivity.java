@@ -6,7 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.content.Intent;
 
-public class Menu extends AppCompatActivity implements View.OnClickListener {
+public class MenuActivity extends AppCompatActivity implements View.OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,12 +26,12 @@ public class Menu extends AppCompatActivity implements View.OnClickListener {
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.btn_menu_findRecipes:
-                Intent cIntent = new Intent(getApplicationContext(), Categories.class);
+                Intent cIntent = new Intent(this, CategoriesActivity.class);
                 startActivity(cIntent);
                 break;
 
             case R.id.btn_menu_savedRecipes:
-                Intent fIntent = new Intent(getApplicationContext(), Favorites.class);
+                Intent fIntent = new Intent(this, FavoritesActivity.class);
                 startActivity(fIntent);
                 break;
 

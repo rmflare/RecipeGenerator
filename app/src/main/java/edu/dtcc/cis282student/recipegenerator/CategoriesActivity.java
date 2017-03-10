@@ -6,7 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.content.Intent;
 
-public class Categories extends AppCompatActivity implements View.OnClickListener {
+public class CategoriesActivity extends AppCompatActivity implements View.OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -73,7 +73,7 @@ public class Categories extends AppCompatActivity implements View.OnClickListene
                 break;
 
             case R.id.btn_all_back:
-                Intent bIntent = new Intent(getApplicationContext(), Menu.class);
+                Intent bIntent = new Intent(this, MenuActivity.class);
                 startActivity(bIntent);
                 break;
 

@@ -6,7 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.content.Intent;
 
-public class Output extends AppCompatActivity implements View.OnClickListener {
+public class OutputActivity extends AppCompatActivity implements View.OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -71,6 +71,8 @@ public class Output extends AppCompatActivity implements View.OnClickListener {
                 break;
 
             case R.id.btn_all_back:
+                Intent bIntent = new Intent(this, CategoriesActivity.class);
+                startActivity(bIntent);
                 break;
 
             case R.id.btn_output_save:

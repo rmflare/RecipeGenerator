@@ -8,20 +8,93 @@
     android:layout_height="match_parent"
     android:padding="@dimen/activity_vertical_margin"
     android:gravity="center"
-    tools:context=".Categories">
+    tools:context=".CategoriesActivity">
 
     <TextView
         android:id="@id/tv_categories_title"
         android:text="@string/categories_title"
         style="@style/title_textview" />
 
-    <fragment
-        android:id="@id/fragment_scroll"
-        android:name="edu.dtcc.cis282student.recipegenerator.ScrollFragment"
+    <GridLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        tools:layout="@layout/fragment_scroll" />
+        android:columnCount="4"
+        android:rowCount="5">
+
+        <Button
+            android:id="@id/btn_categories_meat"
+            android:text="Meat"
+            android:layout_column="1"
+            android:layout_row="1"
+            android:background="@color/pastelOrange"
+            style="@style/grid_button" />
+
+        <Button
+            android:id="@id/btn_categories_veg"
+            android:text="Veget"
+            android:layout_column="2"
+            android:layout_row="1"
+            android:background="@color/pastelOrange"
+            style="@style/grid_button" />
+
+        <Button
+            android:id="@id/btn_categories_fruit"
+            android:text="Fruit"
+            android:layout_column="3"
+            android:layout_row="1"
+            android:background="@color/pastelOrange"
+            style="@style/grid_button" />
+
+        <Button
+            android:id="@id/btn_categories_dairy"
+            android:text="Dairy"
+            android:layout_column="1"
+            android:layout_row="2"
+            android:background="@color/pastelOrange"
+            style="@style/grid_button" />
+
+        <Button
+            android:id="@id/btn_categories_nut"
+            android:text="Nuts"
+            android:layout_column="2"
+            android:layout_row="2"
+            android:background="@color/pastelOrange"
+            style="@style/grid_button" />
+
+        <Button
+            android:id="@id/btn_categories_grain"
+            android:text="Grains"
+            android:layout_column="3"
+            android:layout_row="2"
+            android:background="@color/pastelOrange"
+            style="@style/grid_button" />
+
+        <Button
+            android:id="@id/btn_categories_sea"
+            android:text="Seas"
+            android:layout_column="1"
+            android:layout_row="3"
+            android:background="@color/pastelOrange"
+            style="@style/grid_button" />
+
+        <Button
+            android:id="@id/btn_categories_spice"
+            android:text="Spice"
+            android:layout_column="2"
+            android:layout_row="3"
+            android:background="@color/pastelOrange"
+            style="@style/grid_button" />
+
+        <Button
+            android:id="@id/btn_categories_oil"
+            android:text="Oils"
+            android:layout_column="3"
+            android:layout_row="3"
+            android:background="@color/pastelOrange"
+            style="@style/grid_button" />
+
+    </GridLayout>
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -34,18 +107,18 @@
             android:id="@id/btn_all_back"
             android:text="@string/all_back"
             android:layout_marginEnd="55dp"
-            style="@style/nav_button"/>
+            style="@style/nav_button" />
 
         <Button
             android:id="@id/btn_all_find"
             android:text="@string/all_find"
-            style="@style/nav_button"/>
+            style="@style/nav_button" />
 
         <Button
             android:id="@id/btn_all_clear"
             android:text="@string/all_clear"
             android:layout_marginStart="55dp"
-            style="@style/nav_button"/>
+            style="@style/nav_button" />
 
     </LinearLayout>
 
