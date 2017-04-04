@@ -1,4 +1,4 @@
-package edu.dtcc.cis282student.recipegenerator;
+package edu.dtcc.cis282student.recipegenerator.ui;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -7,9 +7,11 @@ import android.view.View;
 import android.widget.Button;
 import android.content.Intent;
 
-public class IngredientsActivity extends AppCompatActivity implements View.OnClickListener {
+import edu.dtcc.cis282student.recipegenerator.R;
 
-    private static final String TAG = "IngredientsActivity";
+public class IngredientListActivity extends AppCompatActivity implements View.OnClickListener {
+
+    private static final String TAG = "IngredientListActivity";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -105,7 +107,7 @@ public class IngredientsActivity extends AppCompatActivity implements View.OnCli
                 break;
 
             case R.id.btn_all_back:
-                Intent bIntent = new Intent(this, CategoriesActivity.class);
+                Intent bIntent = new Intent(this, CategoryListActivity.class);
                 startActivity(bIntent);
                 break;
 

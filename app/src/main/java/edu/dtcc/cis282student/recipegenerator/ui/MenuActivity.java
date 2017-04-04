@@ -1,4 +1,4 @@
-package edu.dtcc.cis282student.recipegenerator;
+package edu.dtcc.cis282student.recipegenerator.ui;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -6,6 +6,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.content.Intent;
+
+import edu.dtcc.cis282student.recipegenerator.R;
 
 public class MenuActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -60,12 +62,12 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.btn_menu_findRecipes:
-                Intent cIntent = new Intent(this, CategoriesActivity.class);
+                Intent cIntent = new Intent(this, CategoryListActivity.class);
                 startActivity(cIntent);
                 break;
 
             case R.id.btn_menu_savedRecipes:
-                Intent fIntent = new Intent(this, FavoritesActivity.class);
+                Intent fIntent = new Intent(this, FavRecipeListActivity.class);
                 startActivity(fIntent);
                 break;
 

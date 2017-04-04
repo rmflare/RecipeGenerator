@@ -1,4 +1,4 @@
-package edu.dtcc.cis282student.recipegenerator;
+package edu.dtcc.cis282student.recipegenerator.ui;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -7,9 +7,11 @@ import android.view.View;
 import android.widget.Button;
 import android.content.Intent;
 
-public class CategoriesActivity extends AppCompatActivity implements View.OnClickListener {
+import edu.dtcc.cis282student.recipegenerator.R;
 
-    private static final String TAG = "CategoriesActivity";
+public class CategoryListActivity extends AppCompatActivity implements View.OnClickListener {
+
+    private static final String TAG = "CategoryListActivity";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

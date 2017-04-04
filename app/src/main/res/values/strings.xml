@@ -14,10 +14,10 @@
     <string name="menu_savedRecipes">Saved Recipes</string>
 
     <!-- activity_categories -->
-    <string name="categories_title">Select Categories</string>
+    <string name="categories_title">Categories</string>
 
     <!-- activity_ingredients -->
-    <string name="ingredients_title">Select Ingredients</string>
+    <string name="ingredients_title">Ingredients</string>
 
     <!-- activity_favorites -->
     <string name="favorites_title">Favorite Recipes</string>
