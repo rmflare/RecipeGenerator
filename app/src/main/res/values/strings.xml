@@ -15,9 +15,11 @@
 
     <!-- activity_categories -->
     <string name="categories_title">Categories</string>
+    <string name="categories_label">Categories</string>
 
     <!-- activity_ingredients -->
     <string name="ingredients_title">Ingredients</string>
+    <string name="ingredients_label">Ingredients</string>
 
     <!-- activity_favorites -->
     <string name="favorites_title">Favorite Recipes</string>

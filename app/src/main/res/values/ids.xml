@@ -5,6 +5,7 @@
     <item type="id" name="btn_all_back" />
     <item type="id" name="btn_all_find" />
     <item type="id" name="btn_all_clear" />
+    <item type="id" name="gridPagerView" />
 
     <!-- activity_menu -->
     <item type="id" name="activity_menu" />
@@ -65,5 +66,20 @@
     <item type="id" name="btn_output_rec7" />
     <item type="id" name="btn_output_rec8" />
     <item type="id" name="btn_output_rec9" />
+
+    <!-- fragment_grid -->
+    <item type="id" name="fragment_grid" />
+    <item type="id" name="btn_grid_1" />
+    <item type="id" name="btn_grid_2" />
+    <item type="id" name="btn_grid_3" />
+    <item type="id" name="btn_grid_4" />
+    <item type="id" name="btn_grid_5" />
+    <item type="id" name="btn_grid_6" />
+    <item type="id" name="btn_grid_7" />
+    <item type="id" name="btn_grid_8" />
+    <item type="id" name="btn_grid_9" />
+
+    <!-- fragment_grid_pager -->
+    <item type="id" name="fragment_grid_pager" />
 
 </resources>

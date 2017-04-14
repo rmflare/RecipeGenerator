@@ -8,16 +8,18 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.MenuActivity">
+        <activity android:name=".MenuActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.CategoryListActivity" />
-        <activity android:name=".ui.IngredientListActivity" />
-        <activity android:name=".ui.FavRecipeListActivity" />
-        <activity android:name=".ui.RecipeListActivity" />
+        <activity android:name=".CategoryListActivity"
+            android:label="@string/categories_label"/>
+        <activity android:name=".IngredientListActivity"
+            android:label="@string/ingredients_label"/>
+        <activity android:name=".FavRecipeListActivity" />
+        <activity android:name=".RecipeListActivity" />
     </application>
 
 </manifest>

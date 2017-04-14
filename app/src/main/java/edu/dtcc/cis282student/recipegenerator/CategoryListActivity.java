@@ -1,23 +1,17 @@
-package edu.dtcc.cis282student.recipegenerator.ui;
+package edu.dtcc.cis282student.recipegenerator;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.content.Intent;
 
-import edu.dtcc.cis282student.recipegenerator.R;
-
 public class CategoryListActivity extends AppCompatActivity implements View.OnClickListener {
-
-    private static final String TAG = "CategoryListActivity";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_categories);
-        Log.d(TAG, "====== onCreate() called ======");
 
         // Buttons
         Button btnMeat = (Button) findViewById(R.id.btn_categories_meat);
@@ -49,51 +43,36 @@ public class CategoryListActivity extends AppCompatActivity implements View.OnCl
     }
 
     @Override
-    public void onStart() {
-        super.onStart();
-        Log.d(TAG, "====== onStart() called ======");
-    }
-
-    @Override
-    public void onResume() {
-        super.onResume();
-        Log.d(TAG, "====== onResume() called ======");
-    }
-
-    @Override
-    public void onPause() {
-        super.onPause();
-        Log.d(TAG, "====== onPause() called ======");
-    }
-
-    @Override
-    public void onStop() {
-        super.onStop();
-        Log.d(TAG, "====== onStop() called ======");
-    }
-
-    @Override
-    public void onDestroy() {
-        super.onDestroy();
-        Log.d(TAG, "====== onDestroy() called ======");
-    }
-
-    @Override
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.btn_categories_meat:
+                Intent meatIntent = new Intent(this, CategoryListActivity.class);
+                meatIntent.putExtra("category","meat");
+                startActivity(meatIntent);
                 break;
 
             case R.id.btn_categories_veg:
+                Intent vegIntent = new Intent(this, CategoryListActivity.class);
+                vegIntent.putExtra("category","vegetable");
+                startActivity(vegIntent);
                 break;
 
             case R.id.btn_categories_fruit:
+                Intent fruitIntent = new Intent(this, CategoryListActivity.class);
+                fruitIntent.putExtra("category","fruit");
+                startActivity(fruitIntent);
                 break;
 
             case R.id.btn_categories_dairy:
+                Intent dairyIntent = new Intent(this, CategoryListActivity.class);
+                dairyIntent.putExtra("category","dairy");
+                startActivity(dairyIntent);
                 break;
 
             case R.id.btn_categories_nut:
+                Intent nutIntent = new Intent(this, CategoryListActivity.class);
+                nutIntent.putExtra("category","nut");
+                startActivity(nutIntent);
                 break;
 
             case R.id.btn_categories_grain:
