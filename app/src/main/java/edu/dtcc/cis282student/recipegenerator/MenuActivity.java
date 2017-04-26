@@ -14,8 +14,8 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_menu);
 
         // Buttons
-        Button btnFind = (Button) findViewById(R.id.btn_menu_findRecipes);
-        Button btnSaved = (Button) findViewById(R.id.btn_menu_savedRecipes);
+        Button btnFind = (Button) findViewById(R.id.btn_menu_find);
+        Button btnSaved = (Button) findViewById(R.id.btn_menu_saved);
 
         // Button listeners
         btnFind.setOnClickListener(this);
@@ -25,17 +25,12 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.btn_menu_findRecipes:
-                Intent cIntent = new Intent(this, CategoryListActivity.class);
-                startActivity(cIntent);
+            case R.id.btn_menu_find:
+                startActivity(new Intent(this, CategoryListActivity.class));
                 break;
 
-            case R.id.btn_menu_savedRecipes:
-                Intent fIntent = new Intent(this, FavRecipeListActivity.class);
-                startActivity(fIntent);
-                break;
-
-            default:
+            case R.id.btn_menu_saved:
+                startActivity(new Intent(this, FavRecipeListActivity.class));
                 break;
         }
     }

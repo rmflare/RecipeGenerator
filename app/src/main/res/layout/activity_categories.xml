@@ -6,129 +6,107 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="@dimen/activity_vertical_margin"
+    android:layout_gravity="center"
     android:gravity="center"
     tools:context=".CategoryListActivity">
 
     <TextView
         android:id="@id/tv_categories_title"
         android:text="@string/categories_title"
-        style="@style/title_textview" />
+        style="@style/TitleTextView" />
 
     <GridLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:gravity="center"
         android:columnCount="4"
         android:rowCount="5">
 
-        <Button
+        <ImageButton
             android:id="@id/btn_categories_meat"
             android:layout_column="1"
             android:layout_row="1"
-            android:background="@color/pastelOrange"
-            android:tag="meat"
-            android:text="Meat"
-            style="@style/grid_button" />
+            android:src="@drawable/btn_meat_normal"
+            style="@style/GridButton.LightBlue" />
 
-        <Button
+        <ImageButton
             android:id="@id/btn_categories_veg"
             android:layout_column="2"
             android:layout_row="1"
-            android:background="@color/pastelOrange"
-            android:tag="vegetable"
-            android:text="Veget"
-            style="@style/grid_button" />
+            android:src="@drawable/btn_vege_normal"
+            style="@style/GridButton.LightBlue" />
 
-        <Button
+        <ImageButton
             android:id="@id/btn_categories_fruit"
             android:layout_column="3"
             android:layout_row="1"
-            android:background="@color/pastelOrange"
-            android:tag="fruit"
-            android:text="Fruit"
-            style="@style/grid_button" />
+            android:src="@drawable/btn_fruit_normal"
+            style="@style/GridButton.LightBlue" />
 
-        <Button
+        <ImageButton
             android:id="@id/btn_categories_dairy"
             android:layout_column="1"
             android:layout_row="2"
-            android:background="@color/pastelOrange"
-            android:tag="dairy"
-            android:text="Dairy"
-            style="@style/grid_button" />
+            android:src="@drawable/btn_dairy_normal"
+            style="@style/GridButton.LightBlue" />
 
-        <Button
+        <ImageButton
             android:id="@id/btn_categories_nut"
             android:layout_column="2"
             android:layout_row="2"
-            android:background="@color/pastelOrange"
-            android:tag="nut"
-            android:text="Nuts"
-            style="@style/grid_button" />
+            android:src="@drawable/btn_nut_normal"
+            style="@style/GridButton.LightBlue" />
 
-        <Button
+        <ImageButton
             android:id="@id/btn_categories_grain"
             android:layout_column="3"
             android:layout_row="2"
-            android:background="@color/pastelOrange"
-            android:tag="grain"
-            android:text="Grains"
-            style="@style/grid_button" />
+            android:src="@drawable/btn_grain_normal"
+            style="@style/GridButton.LightBlue" />
 
-        <Button
+        <ImageButton
             android:id="@id/btn_categories_sea"
             android:layout_column="1"
             android:layout_row="3"
-            android:background="@color/pastelOrange"
-            android:tag="seasoning"
-            android:text="Seas"
-            style="@style/grid_button" />
+            android:src="@drawable/btn_seafood_normal"
+            style="@style/GridButton.LightBlue" />
 
-        <Button
+        <ImageButton
             android:id="@id/btn_categories_spice"
             android:layout_column="2"
             android:layout_row="3"
-            android:background="@color/pastelOrange"
-            android:tag="spice"
-            android:text="Spice"
-            style="@style/grid_button" />
+            android:src="@drawable/btn_spice_normal"
+            style="@style/GridButton.LightBlue" />
 
-        <Button
+        <ImageButton
             android:id="@id/btn_categories_oil"
             android:layout_column="3"
             android:layout_row="3"
-            android:background="@color/pastelOrange"
-            android:tag="oil"
-            android:text="Oils"
-            style="@style/grid_button" />
-
-    </GridLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="50dp"
-        android:orientation="horizontal">
+            android:src="@drawable/btn_oil_normal"
+            style="@style/GridButton.LightBlue" />
 
         <Button
             android:id="@id/btn_all_back"
-            android:layout_marginEnd="55dp"
+            android:layout_column="1"
+            android:layout_row="4"
             android:text="@string/all_back"
-            style="@style/nav_button" />
+            style="@style/NavigationButton" />
 
         <Button
             android:id="@id/btn_all_find"
+            android:layout_column="2"
+            android:layout_row="4"
             android:text="@string/all_find"
-            style="@style/nav_button" />
+            style="@style/NavigationButton" />
 
         <Button
             android:id="@id/btn_all_clear"
-            android:layout_marginStart="55dp"
+            android:layout_column="3"
+            android:layout_row="4"
             android:text="@string/all_clear"
-            style="@style/nav_button" />
+            style="@style/NavigationButton" />
 
-    </LinearLayout>
+    </GridLayout>
 
 </LinearLayout>

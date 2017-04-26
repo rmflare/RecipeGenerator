@@ -1,17 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
     <!-- generic app ids -->
     <item type="id" name="btn_all_back" />
     <item type="id" name="btn_all_find" />
     <item type="id" name="btn_all_clear" />
-    <item type="id" name="gridPagerView" />
 
     <!-- activity_menu -->
     <item type="id" name="activity_menu" />
-    <item type="id" name="iv_menu_logo" />
-    <item type="id" name="btn_menu_findRecipes" />
-    <item type="id" name="btn_menu_savedRecipes" />
+    <item type="id" name="btn_menu_find" />
+    <item type="id" name="btn_menu_saved" />
 
     <!-- activity_categories -->
     <item type="id" name="activity_categories" />
@@ -29,43 +26,43 @@
     <!-- activity_ingredients -->
     <item type="id" name="activity_ingredients" />
     <item type="id" name="tv_ingredients_title" />
-    <item type="id" name="btn_ingredients_ing1" />
-    <item type="id" name="btn_ingredients_ing2" />
-    <item type="id" name="btn_ingredients_ing3" />
-    <item type="id" name="btn_ingredients_ing4" />
-    <item type="id" name="btn_ingredients_ing5" />
-    <item type="id" name="btn_ingredients_ing6" />
-    <item type="id" name="btn_ingredients_ing7" />
-    <item type="id" name="btn_ingredients_ing8" />
-    <item type="id" name="btn_ingredients_ing9" />
+    <item type="id" name="activity_ingredients_pager" />
+    <item type="id" name="btn_ingredients_1" />
+    <item type="id" name="btn_ingredients_2" />
+    <item type="id" name="btn_ingredients_3" />
+    <item type="id" name="btn_ingredients_4" />
+    <item type="id" name="btn_ingredients_5" />
+    <item type="id" name="btn_ingredients_6" />
+    <item type="id" name="btn_ingredients_7" />
+    <item type="id" name="btn_ingredients_8" />
+    <item type="id" name="btn_ingredients_9" />
 
     <!-- activity_favorites -->
     <item type="id" name="activity_favorites" />
     <item type="id" name="tv_favorites_title" />
     <item type="id" name="btn_favorites_remove" />
-    <item type="id" name="btn_favorites_fav1" />
-    <item type="id" name="btn_favorites_fav2" />
-    <item type="id" name="btn_favorites_fav3" />
-    <item type="id" name="btn_favorites_fav4" />
-    <item type="id" name="btn_favorites_fav5" />
-    <item type="id" name="btn_favorites_fav6" />
-    <item type="id" name="btn_favorites_fav7" />
-    <item type="id" name="btn_favorites_fav8" />
-    <item type="id" name="btn_favorites_fav9" />
+    <item type="id" name="btn_favorites_1" />
+    <item type="id" name="btn_favorites_2" />
+    <item type="id" name="btn_favorites_3" />
+    <item type="id" name="btn_favorites_4" />
+    <item type="id" name="btn_favorites_5" />
+    <item type="id" name="btn_favorites_6" />
+    <item type="id" name="btn_favorites_7" />
+    <item type="id" name="btn_favorites_8" />
+    <item type="id" name="btn_favorites_9" />
 
     <!-- activity_output -->
     <item type="id" name="activity_output" />
     <item type="id" name="tv_output_title" />
-    <item type="id" name="btn_output_save" />
-    <item type="id" name="btn_output_rec1" />
-    <item type="id" name="btn_output_rec2" />
-    <item type="id" name="btn_output_rec3" />
-    <item type="id" name="btn_output_rec4" />
-    <item type="id" name="btn_output_rec5" />
-    <item type="id" name="btn_output_rec6" />
-    <item type="id" name="btn_output_rec7" />
-    <item type="id" name="btn_output_rec8" />
-    <item type="id" name="btn_output_rec9" />
+    <item type="id" name="btn_output_1" />
+    <item type="id" name="btn_output_2" />
+    <item type="id" name="btn_output_3" />
+    <item type="id" name="btn_output_4" />
+    <item type="id" name="btn_output_5" />
+    <item type="id" name="btn_output_6" />
+    <item type="id" name="btn_output_7" />
+    <item type="id" name="btn_output_8" />
+    <item type="id" name="btn_output_9" />
 
     <!-- fragment_grid -->
     <item type="id" name="fragment_grid" />

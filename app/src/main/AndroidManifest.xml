@@ -14,12 +14,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".CategoryListActivity"
-            android:label="@string/categories_label"/>
-        <activity android:name=".IngredientListActivity"
-            android:label="@string/ingredients_label"/>
+        <activity android:name=".CategoryListActivity" />
+        <activity android:name=".IngredientListActivity" />
         <activity android:name=".FavRecipeListActivity" />
         <activity android:name=".RecipeListActivity" />
+        <activity android:name=".PopupActivity"
+            android:theme="@style/AppTheme.PopupTheme"/>
     </application>
 
 </manifest>

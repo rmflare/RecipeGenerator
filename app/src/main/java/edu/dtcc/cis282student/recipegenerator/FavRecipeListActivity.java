@@ -14,15 +14,15 @@ public class FavRecipeListActivity extends AppCompatActivity implements View.OnC
         setContentView(R.layout.activity_favorites);
 
         // Buttons
-        Button btnFav1 = (Button) findViewById(R.id.btn_favorites_fav1);
-        Button btnFav2 = (Button) findViewById(R.id.btn_favorites_fav2);
-        Button btnFav3 = (Button) findViewById(R.id.btn_favorites_fav3);
-        Button btnFav4 = (Button) findViewById(R.id.btn_favorites_fav4);
-        Button btnFav5 = (Button) findViewById(R.id.btn_favorites_fav5);
-        Button btnFav6 = (Button) findViewById(R.id.btn_favorites_fav6);
-        Button btnFav7 = (Button) findViewById(R.id.btn_favorites_fav7);
-        Button btnFav8 = (Button) findViewById(R.id.btn_favorites_fav8);
-        Button btnFav9 = (Button) findViewById(R.id.btn_favorites_fav9);
+        Button btnFav1 = (Button) findViewById(R.id.btn_favorites_1);
+        Button btnFav2 = (Button) findViewById(R.id.btn_favorites_2);
+        Button btnFav3 = (Button) findViewById(R.id.btn_favorites_3);
+        Button btnFav4 = (Button) findViewById(R.id.btn_favorites_4);
+        Button btnFav5 = (Button) findViewById(R.id.btn_favorites_5);
+        Button btnFav6 = (Button) findViewById(R.id.btn_favorites_6);
+        Button btnFav7 = (Button) findViewById(R.id.btn_favorites_7);
+        Button btnFav8 = (Button) findViewById(R.id.btn_favorites_8);
+        Button btnFav9 = (Button) findViewById(R.id.btn_favorites_9);
         Button btnBack = (Button) findViewById(R.id.btn_all_back);
         Button btnRemove = (Button) findViewById(R.id.btn_favorites_remove);
 
@@ -43,31 +43,31 @@ public class FavRecipeListActivity extends AppCompatActivity implements View.OnC
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.btn_favorites_fav1:
+            case R.id.btn_favorites_1:
                 break;
 
-            case R.id.btn_favorites_fav2:
+            case R.id.btn_favorites_2:
                 break;
 
-            case R.id.btn_favorites_fav3:
+            case R.id.btn_favorites_3:
                 break;
 
-            case R.id.btn_favorites_fav4:
+            case R.id.btn_favorites_4:
                 break;
 
-            case R.id.btn_favorites_fav5:
+            case R.id.btn_favorites_5:
                 break;
 
-            case R.id.btn_favorites_fav6:
+            case R.id.btn_favorites_6:
                 break;
 
-            case R.id.btn_favorites_fav7:
+            case R.id.btn_favorites_7:
                 break;
 
-            case R.id.btn_favorites_fav8:
+            case R.id.btn_favorites_8:
                 break;
 
-            case R.id.btn_favorites_fav9:
+            case R.id.btn_favorites_9:
                 break;
 
             case R.id.btn_all_back:
@@ -76,9 +76,6 @@ public class FavRecipeListActivity extends AppCompatActivity implements View.OnC
                 break;
 
             case R.id.btn_favorites_remove:
-                break;
-
-            default:
                 break;
         }
     }

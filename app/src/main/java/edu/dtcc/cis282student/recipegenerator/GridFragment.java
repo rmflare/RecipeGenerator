@@ -7,30 +7,23 @@ import android.view.View;
 import android.view.ViewGroup;
 
 public class GridFragment extends Fragment {
+    static final String POSITION = "ARGUMENT_POSITION";
     int position;
 
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        position = getArguments().getInt("position");
+    static GridFragment newInstance(int position) {
+        GridFragment fragment = new GridFragment();
+        Bundle args = new Bundle();
+        args.putInt(GridFragment.POSITION, position);
+        fragment.setArguments(args);
+        return fragment;
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater,
-                             ViewGroup container,
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_grid, container, false);
-
+        position = getArguments().getInt(POSITION);
         return v;
-    }
-
-    static GridFragment newInstance(int position) {
-        GridFragment frag = new GridFragment();
-        Bundle args = new Bundle();
-        args.putInt("position", position);
-        frag.setArguments(args);
-
-        return frag;
     }
 
     static CharSequence getTitle(int position) {

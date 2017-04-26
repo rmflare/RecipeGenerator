@@ -2,50 +2,79 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
         <item name="android:colorBackground">@color/colorBackground</item>
-        <item name="android:navigationBarColor">@color/darkGreen</item>
-        <item name="android:statusBarColor">@color/darkGreen</item>
+        <item name="android:navigationBarColor">@color/green_dark</item>
+        <item name="android:statusBarColor">@color/green_dark</item>
+    </style>
+
+    <!-- popup window -->
+    <style name="AppTheme.PopupTheme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+    </style>
+
+    <!-- menu buttons -->
+    <style name="MenuButton">
+        <item name="android:layout_width">120dp</item>
+        <item name="android:layout_height">120dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:background">@color/blue_light</item>
     </style>
 
     <!-- navigation buttons -->
-    <style name="nav_button">
-        <item name="android:textSize">20sp</item>
+    <style name="NavigationButton">
         <item name="android:layout_width">120dp</item>
         <item name="android:layout_height">120dp</item>
+        <item name="android:layout_marginTop">50dp</item>
+        <item name="android:layout_gravity">center</item>
         <item name="android:gravity">center</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:background">@color/orange_pastel</item>
     </style>
 
     <!-- grid buttons -->
-    <style name="grid_button">
-        <item name="android:textSize">20sp</item>
+    <style name="GridButton">
         <item name="android:layout_width">150dp</item>
         <item name="android:layout_height">150dp</item>
         <item name="android:layout_margin">5dp</item>
+        <item name="android:layout_gravity">center</item>
         <item name="android:gravity">center</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:background">@drawable/bg_button</item>
+
+    </style>
+
+    <style name="GridButton.LightBlue">
+        <item name="android:background">@color/blue_light</item>
+    </style>
+
+    <style name="GridButton.Red">
+        <item name="android:background">@color/red_pastel</item>
+    </style>
+
+    <style name="GridButton.Purple">
+        <item name="android:background">@color/purple_pastel</item>
+    </style>
+
+    <style name="GridButton.Blue">
+        <item name="android:background">@color/blue_pastel</item>
     </style>
 
     <!-- title textview -->
-    <style name="title_textview">
-        <item name="android:textSize">30sp</item>
-        <item name="android:textColor">@android:color/black</item>
+    <style name="TitleTextView">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginBottom">50dp</item>
+        <item name="android:layout_gravity">center</item>
         <item name="android:gravity">center</item>
-    </style>
-
-    <!-- fragment grid buttons -->
-    <style name="fragment_grid_button">
-        <item name="android:textSize">20sp</item>
-        <item name="android:layout_width">150dp</item>
-        <item name="android:layout_height">150dp</item>
-        <item name="android:layout_margin">5dp</item>
-        <item name="android:gravity">center</item>
-        <item name="android:background">@color/pastelOrange</item>
-    </style>
+        <item name="android:textSize">34sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>-->
 
 </resources>

@@ -46,45 +46,57 @@ public class CategoryListActivity extends AppCompatActivity implements View.OnCl
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.btn_categories_meat:
-                Intent meatIntent = new Intent(this, CategoryListActivity.class);
-                meatIntent.putExtra("category","meat");
+                Intent meatIntent = new Intent(this, IngredientListActivity.class);
+                meatIntent.putExtra("category", "meat");
                 startActivity(meatIntent);
                 break;
 
             case R.id.btn_categories_veg:
-                Intent vegIntent = new Intent(this, CategoryListActivity.class);
-                vegIntent.putExtra("category","vegetable");
+                Intent vegIntent = new Intent(this, IngredientListActivity.class);
+                vegIntent.putExtra("category", "vegetable");
                 startActivity(vegIntent);
                 break;
 
             case R.id.btn_categories_fruit:
-                Intent fruitIntent = new Intent(this, CategoryListActivity.class);
-                fruitIntent.putExtra("category","fruit");
+                Intent fruitIntent = new Intent(this, IngredientListActivity.class);
+                fruitIntent.putExtra("category", "fruit");
                 startActivity(fruitIntent);
                 break;
 
             case R.id.btn_categories_dairy:
-                Intent dairyIntent = new Intent(this, CategoryListActivity.class);
-                dairyIntent.putExtra("category","dairy");
+                Intent dairyIntent = new Intent(this, IngredientListActivity.class);
+                dairyIntent.putExtra("category", "dairy");
                 startActivity(dairyIntent);
                 break;
 
             case R.id.btn_categories_nut:
-                Intent nutIntent = new Intent(this, CategoryListActivity.class);
-                nutIntent.putExtra("category","nut");
+                Intent nutIntent = new Intent(this, IngredientListActivity.class);
+                nutIntent.putExtra("category", "nut");
                 startActivity(nutIntent);
                 break;
 
             case R.id.btn_categories_grain:
+                Intent grainIntent = new Intent(this, IngredientListActivity.class);
+                grainIntent.putExtra("category", "grain");
+                startActivity(grainIntent);
                 break;
 
             case R.id.btn_categories_sea:
+                Intent seaIntent = new Intent(this, IngredientListActivity.class);
+                seaIntent.putExtra("category", "sea");
+                startActivity(seaIntent);
                 break;
 
             case R.id.btn_categories_spice:
+                Intent spiceIntent = new Intent(this, IngredientListActivity.class);
+                spiceIntent.putExtra("category", "spice");
+                startActivity(spiceIntent);
                 break;
 
             case R.id.btn_categories_oil:
+                Intent oilIntent = new Intent(this, IngredientListActivity.class);
+                oilIntent.putExtra("category", "oil");
+                startActivity(oilIntent);
                 break;
 
             case R.id.btn_all_back:
@@ -96,9 +108,6 @@ public class CategoryListActivity extends AppCompatActivity implements View.OnCl
                 break;
 
             case R.id.btn_all_clear:
-                break;
-
-            default:
                 break;
         }
     }
