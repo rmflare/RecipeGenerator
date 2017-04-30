@@ -16,6 +16,7 @@
         </activity>
         <activity android:name=".CategoryListActivity" />
         <activity android:name=".RecipeListActivity" />
+        <activity android:name=".IngredientListActivity" />
         <activity android:name=".MeatListActivity" />
         <activity android:name=".VegetableListActivity" />
         <activity android:name=".FruitListActivity" />
