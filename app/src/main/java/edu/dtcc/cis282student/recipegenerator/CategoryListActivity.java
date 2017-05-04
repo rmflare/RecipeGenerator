@@ -4,19 +4,35 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.content.Intent;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
 public class CategoryListActivity extends AppCompatActivity implements View.OnClickListener {
     static String[] ingredientsList = new String[81];
+    /*private String[] meatList = {"chicken breast", "ground beef", "pork chop", "lamb",
+            "turkey", "beef steak", "sausage", "bacon", "veal"};
+    private String[] vegetableList = {"garlic", "lettuce", "carrot", "tomato", "bell pepper",
+            "corn", "potato", "onion", "kidney beans"};
+    private String[] fruitList = {"cherry", "watermelon", "cantaloupe", "grape", "orange",
+            "lemon", "strawberry", "banana", "apple"};
+    private String[] dairyList = {"egg", "milk", "heavy cream", "butter", "sour cream",
+            "cheddar", "cream cheese", "yogurt", "cream"};
+    private String[] nutList = {"peanut", "cashew", "walnut", "pistachio", "almond",
+            "peanut butter", "hazelnut", "macadamia", "pecan"};
+    private String[] grainList = {"flour", "rice", "corn tortilla", "bread", "pasta",
+            "semolina", "cereal", "bagel", "pita"};
+    private String[] seafoodList = {"salmon", "trout", "sea bass", "shrimp", "tuna",
+            "tilapia", "halibut", "mackerel", "anchovy"};
+    private String[] spiceList = {"salt", "black pepper", "basil", "parsley", "oregano",
+            "ground cumin", "chili powder", "garlic powder", "onion powder"};
+    private String[] oilList = {"olive oil", "canola oil", "vegetable oil", "peanut oil",
+            "cooking spray", "shortening", "red pepper sauce", "tomato paste", "tomato sauce"};*/
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_categories);
 
-        // Buttons
         ImageButton btnMeat = (ImageButton) findViewById(R.id.btn_categories_meat);
         ImageButton btnVeg = (ImageButton) findViewById(R.id.btn_categories_veg);
         ImageButton btnFruit = (ImageButton) findViewById(R.id.btn_categories_fruit);
@@ -24,13 +40,12 @@ public class CategoryListActivity extends AppCompatActivity implements View.OnCl
         ImageButton btnNut = (ImageButton) findViewById(R.id.btn_categories_nut);
         ImageButton btnGrain = (ImageButton) findViewById(R.id.btn_categories_grain);
         ImageButton btnSea = (ImageButton) findViewById(R.id.btn_categories_sea);
-        ImageButton btnSpice = (ImageButton) findViewById(R.id.btn_categories_spice);
+        ImageButton btnSeasoning = (ImageButton) findViewById(R.id.btn_categories_seasoning);
         ImageButton btnOil = (ImageButton) findViewById(R.id.btn_categories_oil);
-        Button btnBack = (Button) findViewById(R.id.btn_all_back);
-        Button btnFind = (Button) findViewById(R.id.btn_categories_find);
-        Button btnClear = (Button) findViewById(R.id.btn_all_clear);
+        ImageButton btnBack = (ImageButton) findViewById(R.id.btn_all_back);
+        ImageButton btnClear = (ImageButton) findViewById(R.id.btn_all_clear);
+        ImageButton btnFind = (ImageButton) findViewById(R.id.btn_categories_find);
 
-        // Button listeners
         btnMeat.setOnClickListener(this);
         btnVeg.setOnClickListener(this);
         btnFruit.setOnClickListener(this);
@@ -38,11 +53,11 @@ public class CategoryListActivity extends AppCompatActivity implements View.OnCl
         btnNut.setOnClickListener(this);
         btnGrain.setOnClickListener(this);
         btnSea.setOnClickListener(this);
-        btnSpice.setOnClickListener(this);
+        btnSeasoning.setOnClickListener(this);
         btnOil.setOnClickListener(this);
         btnBack.setOnClickListener(this);
-        btnFind.setOnClickListener(this);
         btnClear.setOnClickListener(this);
+        btnFind.setOnClickListener(this);
     }
 
     @Override
@@ -79,13 +94,13 @@ public class CategoryListActivity extends AppCompatActivity implements View.OnCl
                 break;
 
             case R.id.btn_categories_sea:
-                Intent seaIntent = new Intent(this, SeafoodListActivity.class);
-                startActivity(seaIntent);
+                Intent seafoodIntent = new Intent(this, SeafoodListActivity.class);
+                startActivity(seafoodIntent);
                 break;
 
-            case R.id.btn_categories_spice:
-                Intent spiceIntent = new Intent(this, SpiceListActivity.class);
-                startActivity(spiceIntent);
+            case R.id.btn_categories_seasoning:
+                Intent seasoningIntent = new Intent(this, SeasoningListActivity.class);
+                startActivity(seasoningIntent);
                 break;
 
             case R.id.btn_categories_oil:
@@ -94,21 +109,21 @@ public class CategoryListActivity extends AppCompatActivity implements View.OnCl
                 break;
 
             case R.id.btn_all_back:
-                Intent bIntent = new Intent(this, MenuActivity.class);
-                startActivity(bIntent);
-                break;
-
-            case R.id.btn_categories_find:
-                Intent rIntent = new Intent(this, RecipeListActivity.class);
-                startActivity(rIntent);
+                Intent menuIntent = new Intent(this, MenuActivity.class);
+                startActivity(menuIntent);
                 break;
 
             case R.id.btn_all_clear:
                 for (int i = 0; i < ingredientsList.length; i++){
                     ingredientsList[i] = null;
                 }
-                Toast.makeText(getApplicationContext(), "All Ingredients Deselected",
+                Toast.makeText(this, "All ingredients deselected",
                         Toast.LENGTH_SHORT).show();
+                break;
+
+            case R.id.btn_categories_find:
+                Intent findIntent = new Intent(this, MenuActivity.class);
+                startActivity(findIntent);
                 break;
         }
     }

@@ -1,136 +1,129 @@
 package edu.dtcc.cis282student.recipegenerator;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Map;
 
-public class NutListActivity extends AppCompatActivity implements View.OnClickListener{
-    boolean[] bolArray = new boolean[9];
-    private List<Button> buttons = new ArrayList<>(BUTTON_IDS.length);
-    private static final int[] BUTTON_IDS = {
+public class NutListActivity extends AppCompatActivity implements View.OnClickListener {
+    SharedPreferences sharedPref;
+    private Button[] buttons;
+    private static final int[] BUTTON_ID = {
             R.id.btn_nut_1, R.id.btn_nut_2, R.id.btn_nut_3,
             R.id.btn_nut_4, R.id.btn_nut_5, R.id.btn_nut_6,
-            R.id.btn_nut_7, R.id.btn_nut_8, R.id.btn_nut_9,
-            R.id.btn_all_back, R.id.btn_all_clear
-    };
+            R.id.btn_nut_7, R.id.btn_nut_8, R.id.btn_nut_9};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_nut);
 
-        for(int id : BUTTON_IDS) {
-            Button button = (Button) findViewById(id);
-            button.setOnClickListener(this);
-            buttons.add(button);
+        buttons = new Button[BUTTON_ID.length];
+        for (int i = 0; i < buttons.length; i++) {
+            buttons[i] = (Button) findViewById(BUTTON_ID[i]);
+            buttons[i].setOnClickListener(this);
         }
+
+        ImageButton btnBack = (ImageButton) findViewById(R.id.btn_all_back);
+        ImageButton btnClear = (ImageButton) findViewById(R.id.btn_all_clear);
+
+        btnBack.setOnClickListener(this);
+        btnClear.setOnClickListener(this);
+
+        getButtonState();
     }
 
     @Override
     public void onClick(View view) {
+        SharedPreferences.Editor editor = sharedPref.edit();
+        String tagString = (String) view.getTag();
+
         switch (view.getId()){
             case R.id.btn_nut_1:
                 if (CategoryListActivity.ingredientsList[36] == null) {
-                    CategoryListActivity.ingredientsList[36] = "peanut";
-                    bolArray[0] = true;
+                    CategoryListActivity.ingredientsList[36] = tagString;
                     view.setSelected(true);
                 } else {
                     CategoryListActivity.ingredientsList[36] = null;
-                    bolArray[0] = false;
                     view.setSelected(false);
                 } break;
 
             case R.id.btn_nut_2:
                 if (CategoryListActivity.ingredientsList[37] == null) {
-                    CategoryListActivity.ingredientsList[37] = "cashew";
-                    bolArray[1] = true;
+                    CategoryListActivity.ingredientsList[37] = tagString;
                     view.setSelected(true);
                 } else {
                     CategoryListActivity.ingredientsList[37] = null;
-                    bolArray[1] = false;
                     view.setSelected(false);
                 } break;
 
             case R.id.btn_nut_3:
                 if (CategoryListActivity.ingredientsList[38] == null) {
-                    CategoryListActivity.ingredientsList[38] = "walnut";
-                    bolArray[2] = true;
+                    CategoryListActivity.ingredientsList[38] = tagString;
                     view.setSelected(true);
                 } else {
                     CategoryListActivity.ingredientsList[38] = null;
-                    bolArray[2] = false;
                     view.setSelected(false);
                 } break;
 
             case R.id.btn_nut_4:
                 if (CategoryListActivity.ingredientsList[39] == null) {
-                    CategoryListActivity.ingredientsList[39] = "pistachio";
-                    bolArray[3] = true;
+                    CategoryListActivity.ingredientsList[39] = tagString;
                     view.setSelected(true);
                 } else {
                     CategoryListActivity.ingredientsList[39] = null;
-                    bolArray[3] = false;
                     view.setSelected(false);
                 } break;
 
             case R.id.btn_nut_5:
                 if (CategoryListActivity.ingredientsList[40] == null) {
-                    CategoryListActivity.ingredientsList[40] = "almond";
-                    bolArray[4] = true;
+                    CategoryListActivity.ingredientsList[40] = tagString;
                     view.setSelected(true);
                 } else {
                     CategoryListActivity.ingredientsList[40] = null;
-                    bolArray[4] = false;
                     view.setSelected(false);
                 } break;
 
             case R.id.btn_nut_6:
                 if (CategoryListActivity.ingredientsList[41] == null) {
-                    CategoryListActivity.ingredientsList[41] = "peanut butter";
-                    bolArray[5] = true;
+                    CategoryListActivity.ingredientsList[41] = tagString;
                     view.setSelected(true);
                 } else {
                     CategoryListActivity.ingredientsList[41] = null;
-                    bolArray[5] = false;
                     view.setSelected(false);
                 } break;
 
             case R.id.btn_nut_7:
                 if (CategoryListActivity.ingredientsList[42] == null) {
-                    CategoryListActivity.ingredientsList[42] = "hazelnut";
-                    bolArray[6] = true;
+                    CategoryListActivity.ingredientsList[42] = tagString;
                     view.setSelected(true);
                 } else {
                     CategoryListActivity.ingredientsList[42] = null;
-                    bolArray[6] = false;
                     view.setSelected(false);
                 } break;
 
             case R.id.btn_nut_8:
                 if (CategoryListActivity.ingredientsList[43] == null) {
-                    CategoryListActivity.ingredientsList[43] = "macadamia";
-                    bolArray[7] = true;
+                    CategoryListActivity.ingredientsList[43] = tagString;
                     view.setSelected(true);
                 } else {
                     CategoryListActivity.ingredientsList[43] = null;
-                    bolArray[7] = false;
                     view.setSelected(false);
                 } break;
 
             case R.id.btn_nut_9:
                 if (CategoryListActivity.ingredientsList[44] == null) {
-                    CategoryListActivity.ingredientsList[44] = "pecan";
-                    bolArray[8] = true;
+                    CategoryListActivity.ingredientsList[44] = tagString;
                     view.setSelected(true);
                 } else {
                     CategoryListActivity.ingredientsList[44] = null;
-                    bolArray[8] = false;
                     view.setSelected(false);
                 } break;
 
@@ -140,30 +133,45 @@ public class NutListActivity extends AppCompatActivity implements View.OnClickLi
                 break;
 
             case R.id.btn_all_clear:
-                for (int i = 36; i < 45; i++){
-                    CategoryListActivity.ingredientsList[i] = null;
-                }
-                for (int i = 0; i < bolArray.length; i++) {
-                    bolArray[i] = false;
-                }
-                for (Button btn : buttons) {
-                    btn.setSelected(false);
-                }
-                Toast.makeText(getApplicationContext(), "Nut ingredients deselected",
-                        Toast.LENGTH_SHORT).show();
+                clearButtonState(editor);
                 break;
         }
     }
 
-    @Override
-    public void onSaveInstanceState(Bundle outState) {
-        outState.putBooleanArray("counter_key", bolArray);
-        super.onSaveInstanceState(outState);
+    void saveButtonState(View view, SharedPreferences.Editor editor){
+        String tagString = (String) view.getTag();
+        view.setSelected(!view.isSelected());
+        if (view.isSelected()) {
+            editor.putBoolean(tagString, true);
+            editor.apply();
+        } else {
+            view.setSelected(false);
+            editor.putBoolean(tagString, false);
+            editor.apply();
+        }
     }
 
-    @Override
-    public void onRestoreInstanceState(Bundle savedInstanceState) {
-        super.onRestoreInstanceState(savedInstanceState);
-        bolArray = savedInstanceState.getBooleanArray("counter_key");
+    void getButtonState() {
+        Map<String,?> keys = sharedPref.getAll();
+
+        for (Map.Entry<String,?> entry : keys.entrySet()) {
+            Log.d("map values", entry.getKey() + ": " + entry.getValue());
+        }
+    }
+
+    void clearButtonState(SharedPreferences.Editor editor) {
+        for (int i = 36; i < 45; i++){
+            CategoryListActivity.ingredientsList[i] = null;
+            buttons[i].setSelected(false);
+        }
+        editor.clear().commit();
+        Toast.makeText(getApplicationContext(), "Nut ingredients deselected",
+                Toast.LENGTH_SHORT).show();
+
+        Map<String,?> keys = sharedPref.getAll();
+
+        for (Map.Entry<String,?> entry : keys.entrySet()) {
+            Log.d("map values", entry.getKey() + ": " + entry.getValue());
+        }
     }
 }

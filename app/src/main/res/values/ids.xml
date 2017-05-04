@@ -7,7 +7,8 @@
     <!-- activity_menu -->
     <item type="id" name="activity_menu" />
     <item type="id" name="tv_menu_title" />
-    <item type="id" name="btn_menu_start" />
+    <item type="id" name="btn_menu_search" />
+    <item type="id" name="btn_menu_favorite" />
 
     <!-- activity_categories -->
     <item type="id" name="activity_categories" />
@@ -20,11 +21,8 @@
     <item type="id" name="btn_categories_nut" />
     <item type="id" name="btn_categories_grain" />
     <item type="id" name="btn_categories_sea" />
-    <item type="id" name="btn_categories_spice" />
+    <item type="id" name="btn_categories_seasoning" />
     <item type="id" name="btn_categories_oil" />
-
-    <!-- activity_categories -->
-    <item type="id" name="activity_ingredients" />
 
     <!-- activity_meat -->
     <item type="id" name="activity_meat" />
@@ -93,16 +91,16 @@
 
     <!-- activity_seafood -->
     <item type="id" name="activity_seafood" />
-    <item type="id" name="tv_sea_title" />
-    <item type="id" name="btn_sea_1" />
-    <item type="id" name="btn_sea_2" />
-    <item type="id" name="btn_sea_3" />
-    <item type="id" name="btn_sea_4" />
-    <item type="id" name="btn_sea_5" />
-    <item type="id" name="btn_sea_6" />
-    <item type="id" name="btn_sea_7" />
-    <item type="id" name="btn_sea_8" />
-    <item type="id" name="btn_sea_9" />
+    <item type="id" name="tv_seafood_title" />
+    <item type="id" name="btn_seafood_1" />
+    <item type="id" name="btn_seafood_2" />
+    <item type="id" name="btn_seafood_3" />
+    <item type="id" name="btn_seafood_4" />
+    <item type="id" name="btn_seafood_5" />
+    <item type="id" name="btn_seafood_6" />
+    <item type="id" name="btn_seafood_7" />
+    <item type="id" name="btn_seafood_8" />
+    <item type="id" name="btn_seafood_9" />
 
     <!-- activity_nut -->
     <item type="id" name="activity_nut" />
@@ -117,18 +115,18 @@
     <item type="id" name="btn_nut_8" />
     <item type="id" name="btn_nut_9" />
 
-    <!-- activity_spice -->
-    <item type="id" name="activity_spice" />
-    <item type="id" name="tv_spice_title" />
-    <item type="id" name="btn_spice_1" />
-    <item type="id" name="btn_spice_2" />
-    <item type="id" name="btn_spice_3" />
-    <item type="id" name="btn_spice_4" />
-    <item type="id" name="btn_spice_5" />
-    <item type="id" name="btn_spice_6" />
-    <item type="id" name="btn_spice_7" />
-    <item type="id" name="btn_spice_8" />
-    <item type="id" name="btn_spice_9" />
+    <!-- activity_seasoning -->
+    <item type="id" name="activity_seasoning" />
+    <item type="id" name="tv_seasoning_title" />
+    <item type="id" name="btn_seasoning_1" />
+    <item type="id" name="btn_seasoning_2" />
+    <item type="id" name="btn_seasoning_3" />
+    <item type="id" name="btn_seasoning_4" />
+    <item type="id" name="btn_seasoning_5" />
+    <item type="id" name="btn_seasoning_6" />
+    <item type="id" name="btn_seasoning_7" />
+    <item type="id" name="btn_seasoning_8" />
+    <item type="id" name="btn_seasoning_9" />
 
     <!-- activity_oil -->
     <item type="id" name="activity_oil" />
@@ -155,20 +153,5 @@
     <item type="id" name="btn_output_7" />
     <item type="id" name="btn_output_8" />
     <item type="id" name="btn_output_9" />
-
-    <!-- fragment_grid -->
-    <item type="id" name="fragment_grid" />
-    <item type="id" name="fragment_grid_pager" />
-    <item type="id" name="tv_PageTitle" />
-    <item type="id" name="pagerView" />
-    <item type="id" name="btn_1" />
-    <item type="id" name="btn_2" />
-    <item type="id" name="btn_3" />
-    <item type="id" name="btn_4" />
-    <item type="id" name="btn_5" />
-    <item type="id" name="btn_6" />
-    <item type="id" name="btn_7" />
-    <item type="id" name="btn_8" />
-    <item type="id" name="btn_9" />
 
 </resources>

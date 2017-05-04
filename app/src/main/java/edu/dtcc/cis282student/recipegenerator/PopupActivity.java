@@ -3,6 +3,7 @@ package edu.dtcc.cis282student.recipegenerator;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.DisplayMetrics;
+import android.widget.TextView;
 
 public class PopupActivity extends AppCompatActivity {
 
@@ -18,5 +19,7 @@ public class PopupActivity extends AppCompatActivity {
         int height = dm.heightPixels;
 
         getWindow().setLayout((int)(width * 0.8), (int)(height * 0.6));
+
+        TextView tvDirections = (TextView) findViewById(R.id.tv_popup_directions);
     }
 }

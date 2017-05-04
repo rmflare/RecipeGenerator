@@ -13,15 +13,21 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
 
-        ImageButton btnStart = (ImageButton) findViewById(R.id.btn_menu_start);
-        btnStart.setOnClickListener(this);
+        ImageButton btnSearch = (ImageButton) findViewById(R.id.btn_menu_search);
+        ImageButton btnFavorite = (ImageButton) findViewById(R.id.btn_menu_favorite);
+
+        btnSearch.setOnClickListener(this);
+        btnFavorite.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.btn_menu_start:
+            case R.id.btn_menu_search:
                 startActivity(new Intent(this, CategoryListActivity.class));
+                break;
+
+            case R.id.btn_menu_favorite:
                 break;
         }
     }

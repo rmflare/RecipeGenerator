@@ -12,18 +12,18 @@ import android.widget.Toast;
 
 import java.util.Map;
 
-public class OilListActivity extends AppCompatActivity implements View.OnClickListener {
+public class SeasoningListActivity extends AppCompatActivity implements View.OnClickListener {
     SharedPreferences sharedPref;
     private Button[] buttons;
     private static final int[] BUTTON_ID = {
-            R.id.btn_oil_1, R.id.btn_oil_2, R.id.btn_oil_3,
-            R.id.btn_oil_4, R.id.btn_oil_5, R.id.btn_oil_6,
-            R.id.btn_oil_7, R.id.btn_oil_8, R.id.btn_oil_9};
+            R.id.btn_seasoning_1, R.id.btn_seasoning_2, R.id.btn_seasoning_3,
+            R.id.btn_seasoning_4, R.id.btn_seasoning_5, R.id.btn_seasoning_6,
+            R.id.btn_seasoning_7, R.id.btn_seasoning_8, R.id.btn_seasoning_9};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_oil);
+        setContentView(R.layout.activity_seasoning);
 
         buttons = new Button[BUTTON_ID.length];
         for (int i = 0; i < buttons.length; i++) {
@@ -46,84 +46,84 @@ public class OilListActivity extends AppCompatActivity implements View.OnClickLi
         String tagString = (String) view.getTag();
 
         switch (view.getId()){
-            case R.id.btn_oil_1:
-                if (CategoryListActivity.ingredientsList[72] == null) {
-                    CategoryListActivity.ingredientsList[72] = tagString;
+            case R.id.btn_seasoning_1:
+                if (CategoryListActivity.ingredientsList[63] == null) {
+                    CategoryListActivity.ingredientsList[63] = tagString;
                     view.setSelected(true);
                 } else {
-                    CategoryListActivity.ingredientsList[72] = null;
+                    CategoryListActivity.ingredientsList[63] = null;
                     view.setSelected(false);
                 } break;
 
-            case R.id.btn_oil_2:
-                if (CategoryListActivity.ingredientsList[73] == null) {
-                    CategoryListActivity.ingredientsList[73] = tagString;
+            case R.id.btn_seasoning_2:
+                if (CategoryListActivity.ingredientsList[64] == null) {
+                    CategoryListActivity.ingredientsList[64]  = tagString;
                     view.setSelected(true);
                 } else {
-                    CategoryListActivity.ingredientsList[73] = null;
+                    CategoryListActivity.ingredientsList[64] = null;
                     view.setSelected(false);
                 } break;
 
-            case R.id.btn_oil_3:
-                if (CategoryListActivity.ingredientsList[74] == null) {
-                    CategoryListActivity.ingredientsList[74] = tagString;
+            case R.id.btn_seasoning_3:
+                if (CategoryListActivity.ingredientsList[65] == null) {
+                    CategoryListActivity.ingredientsList[65] = tagString;
                     view.setSelected(true);
                 } else {
-                    CategoryListActivity.ingredientsList[74] = null;
+                    CategoryListActivity.ingredientsList[65] = null;
                     view.setSelected(false);
                 } break;
 
-            case R.id.btn_oil_4:
-                if (CategoryListActivity.ingredientsList[75] == null) {
-                    CategoryListActivity.ingredientsList[75] = tagString;
+            case R.id.btn_seasoning_4:
+                if (CategoryListActivity.ingredientsList[66] == null) {
+                    CategoryListActivity.ingredientsList[66] = tagString;
                     view.setSelected(true);
                 } else {
-                    CategoryListActivity.ingredientsList[75] = null;
+                    CategoryListActivity.ingredientsList[66] = null;
                     view.setSelected(false);
                 } break;
 
-            case R.id.btn_oil_5:
-                if (CategoryListActivity.ingredientsList[76] == null) {
-                    CategoryListActivity.ingredientsList[76] = tagString;
+            case R.id.btn_seasoning_5:
+                if (CategoryListActivity.ingredientsList[67] == null) {
+                    CategoryListActivity.ingredientsList[67] = tagString;
                     view.setSelected(true);
                 } else {
-                    CategoryListActivity.ingredientsList[76] = null;
+                    CategoryListActivity.ingredientsList[67] = null;
                     view.setSelected(false);
                 } break;
 
-            case R.id.btn_oil_6:
-                if (CategoryListActivity.ingredientsList[77] == null) {
-                    CategoryListActivity.ingredientsList[77] = tagString;
+            case R.id.btn_seasoning_6:
+                if (CategoryListActivity.ingredientsList[68] == null) {
+                    CategoryListActivity.ingredientsList[68] = tagString;
                     view.setSelected(true);
                 } else {
-                    CategoryListActivity.ingredientsList[77] = null;
+                    CategoryListActivity.ingredientsList[68] = null;
                     view.setSelected(false);
                 } break;
 
-            case R.id.btn_oil_7:
-                if (CategoryListActivity.ingredientsList[78] == null) {
-                    CategoryListActivity.ingredientsList[78] = tagString;
+            case R.id.btn_seasoning_7:
+                if (CategoryListActivity.ingredientsList[69] == null) {
+                    CategoryListActivity.ingredientsList[69] = tagString;
                     view.setSelected(true);
                 } else {
-                    CategoryListActivity.ingredientsList[78] = null;
+                    CategoryListActivity.ingredientsList[69] = null;
                     view.setSelected(false);
                 } break;
 
-            case R.id.btn_oil_8:
-                if (CategoryListActivity.ingredientsList[79] == null) {
-                    CategoryListActivity.ingredientsList[79] = tagString;
+            case R.id.btn_seasoning_8:
+                if (CategoryListActivity.ingredientsList[70] == null) {
+                    CategoryListActivity.ingredientsList[70] = tagString;
                     view.setSelected(true);
                 } else {
-                    CategoryListActivity.ingredientsList[79] = null;
+                    CategoryListActivity.ingredientsList[70] = null;
                     view.setSelected(false);
                 } break;
 
-            case R.id.btn_oil_9:
-                if (CategoryListActivity.ingredientsList[80] == null) {
-                    CategoryListActivity.ingredientsList[80] = tagString;
+            case R.id.btn_seasoning_9:
+                if (CategoryListActivity.ingredientsList[71] == null) {
+                    CategoryListActivity.ingredientsList[71] = tagString;
                     view.setSelected(true);
                 } else {
-                    CategoryListActivity.ingredientsList[80] = null;
+                    CategoryListActivity.ingredientsList[71] = null;
                     view.setSelected(false);
                 } break;
 
@@ -133,15 +133,21 @@ public class OilListActivity extends AppCompatActivity implements View.OnClickLi
                 break;
 
             case R.id.btn_all_clear:
-                for (int i = 72; i < 81; i++){
-                    CategoryListActivity.ingredientsList[i] = null;
-                }
-                for (Button btn : buttons) {
-                    btn.setSelected(false);
-                }
-                Toast.makeText(getApplicationContext(), "Oil ingredients deselected",
-                        Toast.LENGTH_SHORT).show();
+                clearButtonState(editor);
                 break;
+        }
+    }
+
+    void saveButtonState(View view, SharedPreferences.Editor editor){
+        String tagString = (String) view.getTag();
+        view.setSelected(!view.isSelected());
+        if (view.isSelected()) {
+            editor.putBoolean(tagString, true);
+            editor.apply();
+        } else {
+            view.setSelected(false);
+            editor.putBoolean(tagString, false);
+            editor.apply();
         }
     }
 
@@ -154,12 +160,12 @@ public class OilListActivity extends AppCompatActivity implements View.OnClickLi
     }
 
     void clearButtonState(SharedPreferences.Editor editor) {
-        for (int i = 72; i < 81; i++){
+        for (int i = 63; i < 72; i++){
             CategoryListActivity.ingredientsList[i] = null;
             buttons[i].setSelected(false);
         }
         editor.clear().commit();
-        Toast.makeText(getApplicationContext(), "Oil ingredients deselected",
+        Toast.makeText(getApplicationContext(), "Seasoning ingredients deselected",
                 Toast.LENGTH_SHORT).show();
 
         Map<String,?> keys = sharedPref.getAll();

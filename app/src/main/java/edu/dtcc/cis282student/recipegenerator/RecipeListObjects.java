@@ -1,7 +1,6 @@
 package edu.dtcc.cis282student.recipegenerator;
 
 import java.util.ArrayList;
-import java.util.Objects;
 
 public class RecipeListObjects {
     private static ArrayList<Recipe> recipes = new ArrayList<>();
@@ -59,20 +58,19 @@ public class RecipeListObjects {
 
     String compareList(String[] ingredientList) {
         String recipeString = "";
-        int count;
+        int count = 0;
 
-        for (Recipe dish : recipes) {
-            count = 0;
-            for (Ingredient ing : dish.ingredients) {
+        for (Recipe recipe : recipes) {
+            for (Ingredient ing : recipe.ingredients) {
                 for (String ingList : ingredientList) {
-                    if (Objects.equals(ingList, ing.getName())) {
+                    if (ingList.equals(ing.getName())) {
                         count++;
                         break;
                     }
                 }
             }
-            if (count == dish.ingredients.size())
-                recipeString += dish.recipeName + "\t";
+            if (count == recipe.ingredients.size())
+                recipeString += recipe.recipeName + "\t";
         } return recipeString;
     }
 }

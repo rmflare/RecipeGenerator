@@ -3,23 +3,37 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_menu"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_gravity="center"
     android:gravity="center"
+    android:orientation="vertical"
     tools:context=".MenuActivity">
 
     <TextView
-        android:id="@id/tv_menu_title"
+        android:id="@+id/tv_menu_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
         android:text="@string/menu_title"
-        style="@style/TitleTextView" />
+        android:textSize="36sp"
+        android:textColor="@color/black"/>
 
-    <ImageButton
-        android:id="@id/btn_menu_start"
-        android:src="@drawable/btn_search_normal"
-        style="@style/GridButton" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btn_menu_search"
+            android:src="@drawable/ic_search"
+            style="@style/Button.Menu" />
+
+        <ImageButton
+            android:id="@+id/btn_menu_favorite"
+            android:layout_marginStart="80dp"
+            android:src="@drawable/ic_favorite"
+            style="@style/Button.Menu" />
+
+    </LinearLayout>
 
 </LinearLayout>

@@ -26,50 +26,215 @@
 
     <!-- activity_meat -->
     <string name="meat_title">Meats</string>
-    <string name="meat_1">Ground\nBeef</string>
-    <string name="meat_2">Chicken\nBreast</string>
+    <string name="meat_1">Ground Beef</string>
+    <string name="meat_2">Chicken Breast</string>
     <string name="meat_3">Pork Chop</string>
     <string name="meat_4">Lamb</string>
     <string name="meat_5">Turkey</string>
-    <string name="meat_6">Beef\nSteak</string>
+    <string name="meat_6">Beef Steak</string>
     <string name="meat_7">Sausage</string>
     <string name="meat_8">Bacon</string>
     <string name="meat_9">Veal</string>
+    <string-array name="meat_list">
+        <item>@string/meat_1</item>
+        <item>@string/meat_2</item>
+        <item>@string/meat_3</item>
+        <item>@string/meat_4</item>
+        <item>@string/meat_5</item>
+        <item>@string/meat_6</item>
+        <item>@string/meat_7</item>
+        <item>@string/meat_8</item>
+        <item>@string/meat_9</item>
+    </string-array>
 
     <!-- activity_vegetable -->
     <string name="veg_title">Vegetables</string>
     <string name="veg_1">Garlic</string>
     <string name="veg_2">Carrot</string>
     <string name="veg_3">Tomato</string>
-    <string name="veg_4">Bell\nPepper</string>
+    <string name="veg_4">Bell Pepper</string>
     <string name="veg_5">Corn</string>
     <string name="veg_6">Potato</string>
     <string name="veg_7">Onion</string>
-    <string name="veg_8">Kidney\nBeans</string>
+    <string name="veg_8">Kidney Beans</string>
     <string name="veg_9">Lettuce</string>
+    <string-array name="veg_list">
+        <item>@string/veg_1</item>
+        <item>@string/veg_2</item>
+        <item>@string/veg_3</item>
+        <item>@string/veg_4</item>
+        <item>@string/veg_5</item>
+        <item>@string/veg_6</item>
+        <item>@string/veg_7</item>
+        <item>@string/veg_8</item>
+        <item>@string/veg_9</item>
+    </string-array>
 
     <!-- activity_fruit -->
     <string name="fruit_title">Fruits</string>
+    <string name="fruit_1">Cherry</string>
+    <string name="fruit_2">Watermelon</string>
+    <string name="fruit_3">Apple</string>
+    <string name="fruit_4">Grape</string>
+    <string name="fruit_5">Orange</string>
+    <string name="fruit_6">Lemon</string>
+    <string name="fruit_7">Strawberry</string>
+    <string name="fruit_8">Banana</string>
+    <string name="fruit_9">Coconut</string>
+    <string-array name="fruit_list">
+        <item>@string/fruit_1</item>
+        <item>@string/fruit_2</item>
+        <item>@string/fruit_3</item>
+        <item>@string/fruit_4</item>
+        <item>@string/fruit_5</item>
+        <item>@string/fruit_6</item>
+        <item>@string/fruit_7</item>
+        <item>@string/fruit_8</item>
+        <item>@string/fruit_9</item>
+    </string-array>
 
     <!-- activity_dairy -->
     <string name="dairy_title">Dairy</string>
+    <string name="dairy_1">Egg</string>
+    <string name="dairy_2">Milk</string>
+    <string name="dairy_3">Butter</string>
+    <string name="dairy_4">Yogurt</string>
+    <string name="dairy_5">Cream Cheese</string>
+    <string name="dairy_6">Parmesan</string>
+    <string name="dairy_7">Cheddar</string>
+    <string name="dairy_8">Sour Cream</string>
+    <string name="dairy_9">Mozzarella</string>
+    <string-array name="dairy_list">
+        <item>@string/dairy_1</item>
+        <item>@string/dairy_2</item>
+        <item>@string/dairy_3</item>
+        <item>@string/dairy_4</item>
+        <item>@string/dairy_5</item>
+        <item>@string/dairy_6</item>
+        <item>@string/dairy_7</item>
+        <item>@string/dairy_8</item>
+        <item>@string/dairy_9</item>
+    </string-array>
 
     <!-- activity_grain -->
     <string name="grain_title">Grains</string>
+    <string name="grain_1">Flour</string>
+    <string name="grain_2">Rice</string>
+    <string name="grain_3">Corn Tortilla</string>
+    <string name="grain_4">Bread</string>
+    <string name="grain_5">Pasta</string>
+    <string name="grain_6">Semolina</string>
+    <string name="grain_7">Cereal</string>
+    <string name="grain_8">Bagel</string>
+    <string name="grain_9">Corn Starch</string>
+    <string-array name="grain_list">
+        <item>@string/grain_1</item>
+        <item>@string/grain_2</item>
+        <item>@string/grain_3</item>
+        <item>@string/grain_4</item>
+        <item>@string/grain_5</item>
+        <item>@string/grain_6</item>
+        <item>@string/grain_7</item>
+        <item>@string/grain_8</item>
+        <item>@string/grain_9</item>
+    </string-array>
 
     <!-- activity_sea -->
-    <string name="sea_title">Seafood</string>
+    <string name="seafood_title">Seafood</string>
+    <string name="seafood_1">Salmon</string>
+    <string name="seafood_2">Trout</string>
+    <string name="seafood_3">Sea Bass</string>
+    <string name="seafood_4">Shrimp</string>
+    <string name="seafood_5">Tuna</string>
+    <string name="seafood_6">Crab</string>
+    <string name="seafood_7">Tilapia</string>
+    <string name="seafood_8">Halibut</string>
+    <string name="seafood_9">Mackerel</string>
+    <string-array name="seafood_list">
+        <item>@string/seafood_1</item>
+        <item>@string/seafood_2</item>
+        <item>@string/seafood_3</item>
+        <item>@string/seafood_4</item>
+        <item>@string/seafood_5</item>
+        <item>@string/seafood_6</item>
+        <item>@string/seafood_7</item>
+        <item>@string/seafood_8</item>
+        <item>@string/seafood_9</item>
+    </string-array>
 
     <!-- activity_nut -->
-    <string name="nut_title">Nuts &amp; Legumes</string>
+    <string name="nut_title">Nuts</string>
+    <string name="nut_1">Peanut</string>
+    <string name="nut_2">Cashew</string>
+    <string name="nut_3">Walnut</string>
+    <string name="nut_4">Pistachio</string>
+    <string name="nut_5">Almond</string>
+    <string name="nut_6">Macadamia</string>
+    <string name="nut_7">Hazelnut</string>
+    <string name="nut_8">Pecan</string>
+    <string name="nut_9">Chestnut</string>
+    <string-array name="nut_list">
+        <item>@string/nut_1</item>
+        <item>@string/nut_2</item>
+        <item>@string/nut_3</item>
+        <item>@string/nut_4</item>
+        <item>@string/nut_5</item>
+        <item>@string/nut_6</item>
+        <item>@string/nut_7</item>
+        <item>@string/nut_8</item>
+        <item>@string/nut_9</item>
+    </string-array>
 
-    <!-- activity_spice -->
-    <string name="spice_title">Spices</string>
+    <!-- activity_seasoning -->
+    <string name="seasoning_title">Seasonings</string>
+    <string name="seasoning_1">Salt</string>
+    <string name="seasoning_2">Black Pepper</string>
+    <string name="seasoning_3">Basil</string>
+    <string name="seasoning_4">Parsley</string>
+    <string name="seasoning_5">Oregano</string>
+    <string name="seasoning_6">Ground Cumin</string>
+    <string name="seasoning_7">Chili Powder</string>
+    <string name="seasoning_8">Garlic Powder</string>
+    <string name="seasoning_9">Onion Powder</string>
+    <string-array name="seasoning_list">
+        <item>@string/seasoning_1</item>
+        <item>@string/seasoning_2</item>
+        <item>@string/seasoning_3</item>
+        <item>@string/seasoning_4</item>
+        <item>@string/seasoning_5</item>
+        <item>@string/seasoning_6</item>
+        <item>@string/seasoning_7</item>
+        <item>@string/seasoning_8</item>
+        <item>@string/seasoning_9</item>
+    </string-array>
 
     <!-- activity_oil -->
     <string name="oil_title">Oils &amp; Sauces</string>
+    <string name="oil_1">Olive Oil</string>
+    <string name="oil_2">Canola Oil</string>
+    <string name="oil_3">Vegetable Oil</string>
+    <string name="oil_4">Peanut Oil</string>
+    <string name="oil_5">Cooking Spray</string>
+    <string name="oil_6">Shortening</string>
+    <string name="oil_7">Red Pepper Sauce</string>
+    <string name="oil_8">Tomato Paste</string>
+    <string name="oil_9">Tomato Sauce</string>
+    <string-array name="oil_list">
+        <item>@string/oil_1</item>
+        <item>@string/oil_2</item>
+        <item>@string/oil_3</item>
+        <item>@string/oil_4</item>
+        <item>@string/oil_5</item>
+        <item>@string/oil_6</item>
+        <item>@string/oil_7</item>
+        <item>@string/oil_8</item>
+        <item>@string/oil_9</item>
+    </string-array>
 
     <!-- activity_output -->
     <string name="output_title">Found Recipes</string>
+
+    <!-- activity_popup -->
+    <string name="popup_directions">DIRECTIONS GO HERE</string>
 
 </resources>
